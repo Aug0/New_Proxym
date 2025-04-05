@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Memories</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>tailwind.config = { theme: { extend: { colors: { primary: '#D4AF37', secondary: '#FFE4E1' }, borderRadius: { 'none': '0px', 'sm': '4px', DEFAULT: '8px', 'md': '12px', 'lg': '16px', 'xl': '20px', '2xl': '24px', '3xl': '32px', 'full': '9999px', 'button': '8px' } } } }</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Great+Vibes&family=Cormorant+Garamond:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="Index.css" rel="stylesheet">
+</head>
+
+<body class="min-h-screen flex items-center justify-center p-4 md:p-8">
+    
+    <div class="relative w-full max-w-6xl bg-white/70 backdrop-blur-sm rounded-lg shadow-xl overflow-hidden fade-in">
+        <!-- Set flex-col-reverse for mobile, flex-row for larger screens -->
+        <div class="flex flex-col-reverse md:flex-row">
+            
+            <!-- Left Column - Text Content -->
+            <div class="w-full md:w-1/2 p-8 md:p-12 flex flex-col justify-center relative">
+                <!-- Decorative Ring Top Left -->
+                <div class="absolute top-6 left-6 w-12 h-12 flex items-center justify-center text-primary opacity-60">
+                    <i class="ri-heart-2-fill ri-2x"></i>
+                </div>
+    
+                <h1 class="title text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-6 slide-in-up"
+                    style="animation-delay: 0.1s">WEDDING MEMORIES</h1>
+                <div class="golden-line w-32 mb-8 slide-in-up" style="animation-delay: 0.2s"></div>
+    
+                <div class="flex flex-col items-start">
+                    <p class="date text-2xl md:text-3xl text-gray-700 mb-3 slide-in-up" style="animation-delay: 0.3s">
+                        20-2-2024</p>
+                    <p class="venue text-lg md:text-xl text-gray-600 mb-8 slide-in-up" style="animation-delay: 0.4s">
+                        Park Hyatt - Hyderabad</p>
+                </div>
+    
+                <!-- Decorative Ring Bottom Right -->
+                <div class="absolute bottom-6 right-6 w-12 h-12 flex items-center justify-center text-primary opacity-60">
+                    <i class="ri-heart-2-fill ri-2x"></i>
+                </div>
+            </div>
+    
+            <!-- Right Column - Profile Image -->
+            <div class="w-full md:w-1/2 p-8 md:p-12 flex flex-col items-center justify-center">
+                <div class="profile-circle w-64 h-64 md:w-80 md:h-80 mx-auto mb-8 fade-in" style="animation-delay: 0.3s">
+                    <img src="images/weddings.jpg"
+                        alt="Wedding Couple" class="w-full h-full object-cover rounded-full shadow-md">
+                </div>
+    
+                <div class="text-center slide-in-up" style="animation-delay: 0.5s">
+                    <p class="date text-3xl text-gray-700 mb-2">Elizabeth & James</p>
+                    <div class="golden-line w-32 mx-auto mb-4"></div>
+                    <p class="venue text-lg text-gray-600 float">Forever & Always</p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Decorative Bottom Border -->
+        <div class="h-2 bg-gradient-to-r from-white via-primary to-white opacity-30"></div>
+    </div>
+    
+</body>
+
+</html>

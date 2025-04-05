@@ -1,0 +1,110 @@
+:where([class^="ri-"])::before {
+    content: "\f3c2";
+}
+
+body {
+    background: linear-gradient(135deg, #FFE4E1 0%, #FFFFFF 100%);
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.title {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 2px;
+}
+
+.date {
+    font-family: 'Great Vibes', cursive;
+}
+
+.venue {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.golden-line {
+    height: 1px;
+    background: linear-gradient(90deg, rgba(212, 175, 55, 0) 0%, rgba(212, 175, 55, 1) 50%, rgba(212, 175, 55, 0) 100%);
+}
+
+.floral-pattern {
+    background-size: cover;
+    background-position: center;
+    opacity: 0.05;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.slide-in-up {
+    animation: slideInUp 0.8s ease-out forwards;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.float {
+    animation: float 6s ease-in-out infinite;
+}
+
+.profile-circle {
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 25px rgba(212, 175, 55, 0.3);
+    transition: all 0.5s ease;
+}
+
+.profile-circle::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border: 2px solid rgba(212, 175, 55, 0.5);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.profile-circle:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 35px rgba(212, 175, 55, 0.5);
+}
+
+.profile-circle img {
+    transition: transform 0.7s ease;
+}
+
+.profile-circle:hover img {
+    transform: scale(1.08);
+}
